@@ -46,97 +46,179 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assess.cs">
+    <Compile Include="AssesCom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Assess.Designer.cs">
-      <DependentUpon>Assess.cs</DependentUpon>
+    <Compile Include="AssesCom.Designer.cs">
+      <DependentUpon>AssesCom.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="UpdateComp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="UpdateComp.Designer.cs">
+      <DependentUpon>UpdateComp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="ComRead.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="ComRead.Designer.cs">
+      <DependentUpon>ComRead.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="UpdateLevel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="UpdateLevel.Designer.cs">
+      <DependentUpon>UpdateLevel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
+    <Compile Include="RubLevel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="RubLevel.Designer.cs">
+      <DependentUpon>RubLevel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form6.cs">
+    <Compile Include="LevelRead.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="LevelRead.Designer.cs">
+      <DependentUpon>LevelRead.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form7.cs">
+    <Compile Include="RubRead.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <Compile Include="RubRead.Designer.cs">
+      <DependentUpon>RubRead.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form8.cs">
+    <Compile Include="RubUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form8.Designer.cs">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <Compile Include="RubUpdate.Designer.cs">
+      <DependentUpon>RubUpdate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form9.cs">
+    <Compile Include="Rubrics.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form9.Designer.cs">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <Compile Include="Rubrics.Designer.cs">
+      <DependentUpon>Rubrics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcessPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcessPortal.Designer.cs">
+      <DependentUpon>AcessPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>AsRead.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAss.Designer.cs">
+      <DependentUpon>UpdateAss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StuRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StuRead.Designer.cs">
+      <DependentUpon>StuRead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStu.Designer.cs">
+      <DependentUpon>UpdateStu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloPortal.Designer.cs">
+      <DependentUpon>CloPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CloRead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloRead.Designer.cs">
+      <DependentUpon>CloRead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateClo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateClo.Designer.cs">
+      <DependentUpon>UpdateClo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Assess.resx">
-      <DependentUpon>Assess.cs</DependentUpon>
+    <EmbeddedResource Include="AssesCom.resx">
+      <DependentUpon>AssesCom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="UpdateComp.resx">
+      <DependentUpon>UpdateComp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="ComRead.resx">
+      <DependentUpon>ComRead.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="UpdateLevel.resx">
+      <DependentUpon>UpdateLevel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="RubLevel.resx">
+      <DependentUpon>RubLevel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <EmbeddedResource Include="LevelRead.resx">
+      <DependentUpon>LevelRead.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <EmbeddedResource Include="RubRead.resx">
+      <DependentUpon>RubRead.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form8.resx">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <EmbeddedResource Include="RubUpdate.resx">
+      <DependentUpon>RubUpdate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form9.resx">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <EmbeddedResource Include="Rubrics.resx">
+      <DependentUpon>Rubrics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcessPortal.resx">
+      <DependentUpon>AcessPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsRead.resx">
+      <DependentUpon>AsRead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAss.resx">
+      <DependentUpon>UpdateAss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StuRead.resx">
+      <DependentUpon>StuRead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStu.resx">
+      <DependentUpon>UpdateStu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloPortal.resx">
+      <DependentUpon>CloPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloRead.resx">
+      <DependentUpon>CloRead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateClo.resx">
+      <DependentUpon>UpdateClo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
