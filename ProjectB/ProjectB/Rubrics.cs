@@ -45,7 +45,9 @@ namespace ProjectB
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-          
+            MainPage form = new MainPage();
+            this.Hide();
+            form.Show();
 
         }
 

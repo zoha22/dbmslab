@@ -63,5 +63,12 @@ namespace ProjectB
         {
 
         }
+
+        private void linkLabel7_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Attendence form = new Attendence();
+            this.Hide();
+            form.Show();
+        }
     }
 }

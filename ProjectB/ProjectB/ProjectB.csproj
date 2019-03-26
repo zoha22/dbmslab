@@ -52,6 +52,30 @@
     <Compile Include="AssesCom.Designer.cs">
       <DependentUpon>AssesCom.cs</DependentUpon>
     </Compile>
+    <Compile Include="Attendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendence.Designer.cs">
+      <DependentUpon>Attendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentList.Designer.cs">
+      <DependentUpon>StudentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarkAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarkAttendance.Designer.cs">
+      <DependentUpon>MarkAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowAttendance.Designer.cs">
+      <DependentUpon>ShowAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateComp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +189,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AssesCom.resx">
       <DependentUpon>AssesCom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendence.resx">
+      <DependentUpon>Attendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentList.resx">
+      <DependentUpon>StudentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarkAttendance.resx">
+      <DependentUpon>MarkAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowAttendance.resx">
+      <DependentUpon>ShowAttendance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateComp.resx">
       <DependentUpon>UpdateComp.cs</DependentUpon>

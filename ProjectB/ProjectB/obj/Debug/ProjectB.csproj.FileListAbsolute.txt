@@ -26,3 +26,7 @@ D:\ProjectB\ProjectB\obj\Debug\ProjectB.UpdateLevel.resources
 D:\ProjectB\ProjectB\obj\Debug\ProjectB.AssessCom.resources
 D:\ProjectB\ProjectB\obj\Debug\ProjectB.UpdateComp.resources
 D:\ProjectB\ProjectB\obj\Debug\ProjectB.ComRead.resources
+D:\ProjectB\ProjectB\obj\Debug\ProjectB.Attendence.resources
+D:\ProjectB\ProjectB\obj\Debug\ProjectB.Form1.resources
+D:\ProjectB\ProjectB\obj\Debug\ProjectB.MarkAttendance.resources
+D:\ProjectB\ProjectB\obj\Debug\ProjectB.ShowAttendance.resources

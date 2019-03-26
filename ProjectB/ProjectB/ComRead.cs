@@ -35,7 +35,7 @@ namespace ProjectB
                 {
                     int row = e.RowIndex;
                     int id = Convert.ToInt32(dataGridView1.Rows[row].Cells["Id"].Value);
-                    string Delete_Query = "DELETE FROM AssesCom WHERE Id = '" + id + "'";
+                    string Delete_Query = "DELETE FROM AssessmentComponent WHERE Id = '" + id + "'";
                     SqlCommand cmd = new SqlCommand(Delete_Query, Connection);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Asssessment is deleted!");
