@@ -24,10 +24,10 @@ namespace ProjectB
         {
             AttendenceId= id;
             StudentId = id2;
-            InitializeComponent();
+            InitializeComponent(); //Global Variables created
         }
         
-       
+       //Sql Connection
         public string connection = "Data Source=DESKTOP-6TJ7I4T;Initial Catalog=ProjectB;Integrated Security=True";
 
         private void Form2_Load(object sender, EventArgs e)
@@ -53,14 +53,14 @@ namespace ProjectB
             else 
             {
                 Status = 4;
-            }
+            } //Status is marked
 
             SqlConnection con = new SqlConnection(connection);
             con.Open();
             string aquery = "INSERT INTO StudentAttendance (AttendanceId, StudentId, AttendanceStatus) VALUES('" + AttendenceId + "','" + StudentId + "', '" + Status + "')";
             SqlCommand cmd = new SqlCommand(aquery, con);
             cmd.ExecuteNonQuery();
-            MessageBox.Show("Attendence is marked successfully");
+            MessageBox.Show("Attendence is marked successfully"); //Attendance is marked
             
         }
 
@@ -68,7 +68,8 @@ namespace ProjectB
         {
             ShowAttendance frm = new ShowAttendance();
             this.Hide();
-            frm.Show();
+            frm.Show(); //This will redirect the page to Show Attendance
+
         }
     }
     }

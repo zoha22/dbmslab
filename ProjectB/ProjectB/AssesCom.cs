@@ -18,6 +18,7 @@ namespace ProjectB
             InitializeComponent();
         }
 
+        //Sql Connection
         public string connection = "Data Source=DESKTOP-6TJ7I4T;Initial Catalog=ProjectB;Integrated Security=True";
 
         private void label2_Click(object sender, EventArgs e)
@@ -27,38 +28,38 @@ namespace ProjectB
 
         private void AssessCom_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(connection);
+            SqlConnection conn = new SqlConnection(connection);
             comboBox2.Items.Clear();
-            con.Open();
-            SqlCommand cmd;
-            cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select Id from Rubric";
-            cmd.ExecuteNonQuery();
+            conn.Open(); //connection is open
+            SqlCommand command;
+            command = conn.CreateCommand();
+            command.CommandType = CommandType.Text;
+            command.CommandText = "Select Id from Rubric";
+            command.ExecuteNonQuery();
             DataTable table = new DataTable();
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
             adapter.Fill(table);
 
             foreach (DataRow row in table.Rows)
             {
-                comboBox2.Items.Add(row["Id"].ToString());
+                comboBox2.Items.Add(row["Id"].ToString());     //for showing RubricId in comboBox 
             }
             
-            SqlCommand cmd2;
-            cmd2 = con.CreateCommand();
-            cmd2.CommandType = CommandType.Text;
-            cmd2.CommandText = "Select Id from Assessment";
-            cmd2.ExecuteNonQuery();
+            SqlCommand cmnd2;
+            cmnd2 = conn.CreateCommand();
+            cmnd2.CommandType = CommandType.Text;
+            cmnd2.CommandText = "Select Id from Assessment";
+            cmnd2.ExecuteNonQuery();
             DataTable tb = new DataTable();
-            SqlDataAdapter adap = new SqlDataAdapter(cmd2);
+            SqlDataAdapter adap = new SqlDataAdapter(cmnd2);
             adap.Fill(tb);
 
             foreach (DataRow row in tb.Rows)
             {
-                comboBox1.Items.Add(row["Id"].ToString());
+                comboBox1.Items.Add(row["Id"].ToString());   //for showing AssessmentId in comboBox 
             }
 
-            con.Close();
+            conn.Close(); //connection is closed
 
 
 
@@ -73,7 +74,7 @@ namespace ProjectB
                 string aquery = "INSERT INTO AssessmentComponent (Name, DateCreated, DateUpdated, TotalMarks, AssessmentId, RubricId) VALUES('" + Nam.Text + "','" + DateTime.Now + "','" + DateTime.Now + "', '" + Convert.ToInt32(ToMarks.Text) + "' , '"+ Convert.ToInt32(comboBox1.SelectedItem) + "', '"+ Convert.ToInt32(comboBox2.SelectedItem) + "')";
                 SqlCommand cmd = new SqlCommand(aquery, con);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Data is entered successfully");
+                MessageBox.Show("Data is entered successfully"); //Values in AssessmentComponent are added
             }
 
             else
@@ -84,16 +85,17 @@ namespace ProjectB
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            AcessPortal frm = new AcessPortal();
+            AcessPortal frm = new AcessPortal(); //this will redirect the page to Assessement portal
             this.Hide();
-            frm.Show();
+            frm.Show();  
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            ComRead form = new ComRead();
+            ComRead form = new ComRead(); 
             this.Hide();
-            form.Show();
+            form.Show();   //this will redirect the page for reading the total AssessmentComponent which were added 
         }
 
         private void Nam_TextChanged(object sender, EventArgs e)

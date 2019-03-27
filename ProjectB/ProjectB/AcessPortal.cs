@@ -17,6 +17,7 @@ namespace ProjectB
         {
             InitializeComponent();
         }
+        // Connection with sql
         public string connection = "Data Source=DESKTOP-6TJ7I4T;Initial Catalog=ProjectB;Integrated Security=True";
 
         private void label2_Click(object sender, EventArgs e)
@@ -61,7 +62,7 @@ namespace ProjectB
                 string aquery = "INSERT INTO Assessment (Title, DateCreated, TotalMarks, TotalWeightage) VALUES('" + title.Text + "','" + DateTime.Now + "', '" + Convert.ToInt32(marks.Text) + "', '" + Convert.ToInt32(weigh.Text) + "' )";
                 SqlCommand cmd = new SqlCommand(aquery, con);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Data is entered successfully");
+                MessageBox.Show("Data is entered successfully"); // Values are inserted into Assessment Table
             }
 
             else
@@ -72,8 +73,8 @@ namespace ProjectB
 
         private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form3 frm = new Form3();
-            this.Hide();
+            Form3 frm = new Form3();  //This will redirect the page to AssessRead that shows the total Assessments which are added.
+            this.Hide();   
             frm.Show();
         }
 
@@ -89,7 +90,7 @@ namespace ProjectB
 
         private void linkLabel2_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MainPage frm = new MainPage();
+            MainPage frm = new MainPage(); //// this will redirect the page to MainPage for switching to another table 
             this.Hide();
             frm.Show();
         }

@@ -63,9 +63,10 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(149, 403);
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.Location = new System.Drawing.Point(86, 381);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(92, 13);
+            this.linkLabel2.Size = new System.Drawing.Size(136, 16);
             this.linkLabel2.TabIndex = 52;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Assessment portal\r\n";
@@ -86,7 +87,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(50, 31);
+            this.label7.Location = new System.Drawing.Point(12, 27);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(236, 48);
             this.label7.TabIndex = 50;
@@ -158,9 +159,10 @@
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel3.Location = new System.Drawing.Point(622, 52);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(41, 13);
+            this.linkLabel3.Size = new System.Drawing.Size(59, 16);
             this.linkLabel3.TabIndex = 58;
             this.linkLabel3.TabStop = true;
             this.linkLabel3.Text = "ViewAll\r\n";

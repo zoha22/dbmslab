@@ -30,3 +30,4 @@ D:\ProjectB\ProjectB\obj\Debug\ProjectB.Attendence.resources
 D:\ProjectB\ProjectB\obj\Debug\ProjectB.Form1.resources
 D:\ProjectB\ProjectB\obj\Debug\ProjectB.MarkAttendance.resources
 D:\ProjectB\ProjectB\obj\Debug\ProjectB.ShowAttendance.resources
+D:\ProjectB\ProjectB\obj\Debug\ProjectB.StudentResult.resources

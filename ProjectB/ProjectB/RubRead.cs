@@ -33,19 +33,25 @@ namespace ProjectB
 
             Connection.Open();
             if (e.ColumnIndex == dataGridView1.Columns["btndelete"].Index)
-            {
-                var confirmResult = MessageBox.Show(" you sure about deleting this RubricLevel ??",
+            { 
+                //It will delete Rubric Level against this rubric that has been deleted//
+                var Result = MessageBox.Show(" Are you sure to delete this Rubric ??",
                                      "Confirm Delete!!",
                                      MessageBoxButtons.YesNo);
 
-                if (confirmResult == DialogResult.Yes)
+                if (Result == DialogResult.Yes)
                 {
-                    int row = e.RowIndex;
-                    int id = Convert.ToInt32(dataGridView1.Rows[row].Cells["Id"].Value);
-                    string Delete_Query = "DELETE FROM Rubric WHERE Id = '" + id + "'";
-                    SqlCommand cmd = new SqlCommand(Delete_Query, Connection);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Data is deleted!");
+
+                    int r = e.RowIndex;
+                    int ID = Convert.ToInt32(dataGridView1.Rows[r].Cells["Id"].Value);
+                    
+                    SqlCommand RubricLevelCommand = new SqlCommand("DELETE FROM RubricLevel WHERE RubricId = '" + ID + "'", Connection);
+                    RubricLevelCommand.ExecuteNonQuery();
+
+                    string QueryDel = "DELETE FROM Rubric WHERE Id = '" + ID + "'";
+                    SqlCommand command = new SqlCommand(QueryDel, Connection);
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Data has been deleted!");
                     this.dataGridView1.Rows.RemoveAt(e.RowIndex);
                 }
 
@@ -53,9 +59,12 @@ namespace ProjectB
 
 
 
+
+
             }
             if (e.ColumnIndex == dataGridView1.Columns["btnupdate"].Index)
-            {
+            {   
+                //it will update the rubric//
                 int row = e.RowIndex;
                 int id = Convert.ToInt32(dataGridView1.Rows[row].Cells["Id"].Value);
                 this.Hide();
@@ -67,6 +76,7 @@ namespace ProjectB
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //it will display Rubric table in DatGrid
             SqlConnection con = new SqlConnection(connection);
             con.Open();
             if (con.State == ConnectionState.Open)
@@ -89,9 +99,10 @@ namespace ProjectB
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Rubrics form = new Rubrics ();
+            //this will redirect page to Rubrics
+            Rubrics form = new Rubrics (); 
             this.Hide();
-            form.Show();
+            form.Show(); 
 
         }
     }

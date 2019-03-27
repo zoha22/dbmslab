@@ -22,7 +22,7 @@ namespace ProjectB
         {
             IdToUpdate = id;
             InitializeComponent();
-        }
+        } //Created global varaible
         public string connection = "Data Source=DESKTOP-6TJ7I4T;Initial Catalog=ProjectB;Integrated Security=True";
 
         private void Submit_Click(object sender, EventArgs e)
@@ -45,14 +45,15 @@ namespace ProjectB
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
+        {   //Redirecting to rubrics read//
             RubRead form = new RubRead();
             this.Hide();
             form.Show();
         }
 
         private void RubUpdate_Load(object sender, EventArgs e)
-        {
+        {   
+            //This will show Cloid in comboBox//
             SqlConnection con = new SqlConnection(connection);
             comboBox1.Items.Clear();
             con.Open();
@@ -76,6 +77,7 @@ namespace ProjectB
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            // this will redirect the page to main page//
             MainPage form = new MainPage();
             this.Hide();
             form.Show();

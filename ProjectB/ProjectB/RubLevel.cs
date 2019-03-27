@@ -17,6 +17,7 @@ namespace ProjectB
             InitializeComponent();
         }
 
+        //sql connection
         public string connection = "Data Source=DESKTOP-6TJ7I4T;Initial Catalog=ProjectB;Integrated Security=True";
 
 
@@ -41,7 +42,7 @@ namespace ProjectB
             }
 
             con.Close();
-
+            //showing table of Rubric in comboBox
 
         }
 
@@ -49,7 +50,7 @@ namespace ProjectB
         {
             MainPage frm = new MainPage();
             this.Hide();
-            frm.Show();
+            frm.Show();  //this will redirect the page to MainPage
         }
 
         private void Submit_Click(object sender, EventArgs e)
@@ -63,7 +64,7 @@ namespace ProjectB
                 SqlCommand cmd = new SqlCommand(aquery, con);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("RubricLevel is entered successfully");
-            }
+            } //Rubriclevel is added
 
             else
             {
@@ -75,7 +76,12 @@ namespace ProjectB
         {
             LevelRead frm = new LevelRead();
             this.Hide();
-            frm.Show();
+            frm.Show(); //this will redirect the page for reading the total rubriclevel added 
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

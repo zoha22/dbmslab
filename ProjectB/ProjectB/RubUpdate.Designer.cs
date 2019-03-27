@@ -71,20 +71,21 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(99, 299);
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.Location = new System.Drawing.Point(639, 69);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(83, 13);
+            this.linkLabel2.Size = new System.Drawing.Size(65, 16);
             this.linkLabel2.TabIndex = 58;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "back to view list\r\n";
+            this.linkLabel2.Text = "View list\r\n";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // Submit
             // 
             this.Submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Submit.Location = new System.Drawing.Point(659, 383);
+            this.Submit.Location = new System.Drawing.Point(548, 269);
             this.Submit.Name = "Submit";
-            this.Submit.Size = new System.Drawing.Size(88, 35);
+            this.Submit.Size = new System.Drawing.Size(96, 35);
             this.Submit.TabIndex = 57;
             this.Submit.Text = "Update\r\n\r\n";
             this.Submit.UseVisualStyleBackColor = true;
@@ -113,9 +114,10 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(650, 50);
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(76, 365);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(55, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(78, 16);
             this.linkLabel1.TabIndex = 54;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "MainPage\r\n";
@@ -132,6 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);

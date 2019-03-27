@@ -27,11 +27,11 @@ namespace ProjectB
 
             String query = "SELECT FirstName,LastName,RegistrationNumber,AttendanceStatus FROM [Student] JOIN StudentAttendance ON StudentAttendance.StudentId = [Student].Id ";
             SqlCommand cmd = new SqlCommand(query, con);
-            SqlDataAdapter View_Data = new SqlDataAdapter(cmd);
-            DataTable Table = new DataTable(cmd.ToString());
+            SqlDataAdapter VD= new SqlDataAdapter(cmd);
+            DataTable table = new DataTable(cmd.ToString());
 
-            View_Data.Fill(Table);
-            dataGridView1.DataSource = Table;
+            VD.Fill(table);
+            dataGridView1.DataSource = table; //showing required data in dataGrid
 
 
         }
@@ -40,7 +40,7 @@ namespace ProjectB
         {
             MainPage form = new MainPage();
             this.Hide();
-            form.Show();
+            form.Show(); //this will redirect the page to main page
 
 
         }

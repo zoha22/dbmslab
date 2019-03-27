@@ -43,9 +43,10 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(97, 387);
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(63, 434);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(43, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(62, 16);
             this.linkLabel1.TabIndex = 22;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "View all";
@@ -55,7 +56,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(112, 43);
+            this.label1.Location = new System.Drawing.Point(32, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(208, 25);
             this.label1.TabIndex = 21;
@@ -63,9 +64,10 @@
             // 
             // Submit
             // 
-            this.Submit.Location = new System.Drawing.Point(221, 387);
+            this.Submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Submit.Location = new System.Drawing.Point(539, 355);
             this.Submit.Name = "Submit";
-            this.Submit.Size = new System.Drawing.Size(171, 35);
+            this.Submit.Size = new System.Drawing.Size(147, 35);
             this.Submit.TabIndex = 20;
             this.Submit.Text = "Submit";
             this.Submit.UseVisualStyleBackColor = true;
@@ -128,9 +130,10 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.Location = new System.Drawing.Point(613, 74);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(58, 13);
+            this.linkLabel2.Size = new System.Drawing.Size(82, 16);
             this.linkLabel2.TabIndex = 23;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Main Page";

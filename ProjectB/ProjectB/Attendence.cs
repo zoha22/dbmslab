@@ -17,6 +17,7 @@ namespace ProjectB
         {
             InitializeComponent();
         }
+        //Sql connection
         public string connection = "Data Source=DESKTOP-6TJ7I4T;Initial Catalog=ProjectB;Integrated Security=True";
 
 
@@ -27,20 +28,20 @@ namespace ProjectB
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(connection);
+            SqlConnection conn = new SqlConnection(connection);
             
-            con.Open();
-            SqlCommand cmd = new SqlCommand("insert into ClassAttendance(AttendanceDate) values('" + Convert.ToDateTime(dateTimePicker1.Text) + "')",con);
-            cmd.ExecuteNonQuery();
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("insert into ClassAttendance(AttendanceDate) values('" + Convert.ToDateTime(dateTimePicker1.Text) + "')",conn);
+            cmd.ExecuteNonQuery(); //ClassAttendance is added
 
-            SqlCommand cmd2 = new SqlCommand("select * from ClassAttendance where AttendanceDate = '" + Convert.ToDateTime(dateTimePicker1.Text) + "'", con);
+            SqlCommand cmd2 = new SqlCommand("select * from ClassAttendance where AttendanceDate = '" + Convert.ToDateTime(dateTimePicker1.Text) + "'", conn);
 
             var reader = cmd2.ExecuteReader();
             reader.Read();
-            int id = reader.GetInt32(0);
-            Form1 frm = new Form1(id);
+            int Id = reader.GetInt32(0);
+            Form1 frm = new Form1(Id); //This will redirect page to mark attendance of students.
             this.Hide();
-            frm.Show();
+            frm.Show(); 
 
         }
     }

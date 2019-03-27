@@ -16,6 +16,8 @@ namespace ProjectB
         {
             InitializeComponent();
         }
+
+        //Sql Connection
         public string connection = "Data Source=DESKTOP-6TJ7I4T;Initial Catalog=ProjectB;Integrated Security=True";
 
         private void Form7_Load(object sender, EventArgs e)
@@ -33,7 +35,7 @@ namespace ProjectB
                 string aquery = "INSERT INTO Clo (Name, Dateupdated, DateCreated) VALUES('" + name.Text + "','" + DateTime.Now + "', '" + DateTime.Now+ "')";
                 SqlCommand cmd = new SqlCommand(aquery, con);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Data has entered successfully");
+                MessageBox.Show("Data has entered successfully"); //Inserting values in Clo Table
             }
 
             else
@@ -58,14 +60,14 @@ namespace ProjectB
         {
             CloRead frm = new CloRead();
             this.Hide();
-            frm.Show();
+            frm.Show(); //this will redirect the page to CloRead for reading the total Clo added 
         }
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             MainPage form = new MainPage();
             this.Hide();
-            form.Show();
+            form.Show(); //this will redirect the page to Mainpage
         }
     }
 }

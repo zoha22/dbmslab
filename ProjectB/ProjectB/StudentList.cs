@@ -71,5 +71,12 @@ namespace ProjectB
             frm.Show();
 
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Attendence frm = new Attendence();
+            this.Hide();
+            frm.Show(); 
+        }
     }
 }

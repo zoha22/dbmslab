@@ -22,6 +22,7 @@ namespace ProjectB
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //This will display the CloId in ComboBox//
             SqlConnection con = new SqlConnection(connection);
             comboBox1.Items.Clear();
             con.Open();
@@ -47,7 +48,7 @@ namespace ProjectB
         {
             MainPage form = new MainPage();
             this.Hide();
-            form.Show();
+            form.Show(); //this will redirect the page to main page
 
         }
 
@@ -67,12 +68,13 @@ namespace ProjectB
             else
             {
                 MessageBox.Show("Error!");
-            }
+            } 
 
-        }
+        } //Data is inserted in Rubric
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            //this will redirect the page for reading the Rubrics//
             RubRead frm = new RubRead();
             this.Hide();
             frm.Show();
