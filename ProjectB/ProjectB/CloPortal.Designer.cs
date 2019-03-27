@@ -39,7 +39,7 @@
             // Submit
             // 
             this.Submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Submit.Location = new System.Drawing.Point(655, 383);
+            this.Submit.Location = new System.Drawing.Point(579, 323);
             this.Submit.Name = "Submit";
             this.Submit.Size = new System.Drawing.Size(88, 35);
             this.Submit.TabIndex = 30;
@@ -81,9 +81,9 @@
             // 
             // name
             // 
-            this.name.Location = new System.Drawing.Point(373, 120);
+            this.name.Location = new System.Drawing.Point(297, 120);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(116, 20);
+            this.name.Size = new System.Drawing.Size(238, 20);
             this.name.TabIndex = 18;
             this.name.TextChanged += new System.EventHandler(this.Firstna_TextChanged);
             // 

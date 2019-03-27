@@ -35,7 +35,7 @@ namespace ProjectB
                 string aquery = "INSERT INTO Clo (Name, Dateupdated, DateCreated) VALUES('" + name.Text + "','" + DateTime.Now + "', '" + DateTime.Now+ "')";
                 SqlCommand cmd = new SqlCommand(aquery, con);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Data has entered successfully"); //Inserting values in Clo Table
+                MessageBox.Show("Clo has entered successfully"); //Inserting values in Clo Table
             }
 
             else

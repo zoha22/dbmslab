@@ -74,7 +74,7 @@ namespace ProjectB
                 string aquery = "INSERT INTO AssessmentComponent (Name, DateCreated, DateUpdated, TotalMarks, AssessmentId, RubricId) VALUES('" + Nam.Text + "','" + DateTime.Now + "','" + DateTime.Now + "', '" + Convert.ToInt32(ToMarks.Text) + "' , '"+ Convert.ToInt32(comboBox1.SelectedItem) + "', '"+ Convert.ToInt32(comboBox2.SelectedItem) + "')";
                 SqlCommand cmd = new SqlCommand(aquery, con);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Data is entered successfully"); //Values in AssessmentComponent are added
+                MessageBox.Show("AssessComponent is entered successfully"); //Values in AssessmentComponent are added
             }
 
             else

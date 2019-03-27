@@ -51,7 +51,7 @@ namespace ProjectB
                     string QueryDel = "DELETE FROM Rubric WHERE Id = '" + ID + "'";
                     SqlCommand command = new SqlCommand(QueryDel, Connection);
                     command.ExecuteNonQuery();
-                    MessageBox.Show("Data has been deleted!");
+                    MessageBox.Show("Rubric has been deleted!");
                     this.dataGridView1.Rows.RemoveAt(e.RowIndex);
                 }
 

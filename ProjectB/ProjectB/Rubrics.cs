@@ -62,7 +62,7 @@ namespace ProjectB
                 string aquery = "INSERT INTO Rubric (Details, CloId) VALUES('" + desc.Text + "', '"+ Convert.ToInt32(comboBox1.SelectedItem)+"')";
                 SqlCommand cmd = new SqlCommand(aquery, con);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Data is entered successfully");
+                MessageBox.Show("Rubric has entered successfully");
             }
 
             else
