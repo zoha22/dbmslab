@@ -49,7 +49,7 @@ namespace ProjectB
             SqlCommand cmnd2;
             cmnd2 = con.CreateCommand();
             cmnd2.CommandType = CommandType.Text;
-            cmnd2.CommandText = "Select AssessmentId from AssessmentComponent";
+            cmnd2.CommandText = "Select Id from AssessmentComponent";
             cmnd2.ExecuteNonQuery();
             DataTable tb = new DataTable();
             SqlDataAdapter adap = new SqlDataAdapter(cmnd2);
@@ -57,7 +57,7 @@ namespace ProjectB
 
             foreach (DataRow row in tb.Rows)
             {
-                comboBox1.Items.Add(row["AssessmentId"].ToString());   //for showing AssessmentComponentId in comboBox 
+                comboBox2.Items.Add(row["Id"].ToString());   //for showing AssessmentComponentId in comboBox 
             }
 
            
@@ -65,15 +65,15 @@ namespace ProjectB
             SqlCommand cmd3;
             cmd = con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select MeasurementLevel from RubricLevel";
+            cmd.CommandText = "Select Id from RubricLevel";
             cmd.ExecuteNonQuery();
             DataTable tble = new DataTable();
             SqlDataAdapter adpter = new SqlDataAdapter(cmd);
-            adapter.Fill(table);
+            adpter.Fill(tble);
 
             foreach (DataRow row in tble.Rows)
             {
-                comboBox3.Items.Add(row["MeasurementLevel"].ToString());
+                comboBox3.Items.Add(row["Id"].ToString());
             }
 
 
@@ -83,7 +83,23 @@ namespace ProjectB
 
         private void button1_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection(connection);
+            con.Open();
+            if (con.State == ConnectionState.Open)
+            {
+                string aquery = "INSERT INTO StudentResult(AssessmentComponentId, RubricMeasurementId, StudentId, EvaluationDate) VALUES('" + Convert.ToInt32(comboBox2.SelectedItem)+ "','"+ Convert.ToInt32(comboBox3.SelectedItem)+"', '" + Convert.ToInt32(comboBox1.SelectedItem) + "' , '"+ Convert.ToDateTime(dateTimePicker1.Text) + "')";
+                SqlCommand cmd = new SqlCommand(aquery, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Data is entered successfully"); //Values in AssessmentComponent are added
+            }
 
+            else
+            {
+                MessageBox.Show("Error!");
+            }
+            Result frm = new Result();
+            this.Hide();
+            frm.Show();
         }
     }
 }

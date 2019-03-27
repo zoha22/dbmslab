@@ -58,6 +58,12 @@
     <Compile Include="Attendence.Designer.cs">
       <DependentUpon>Attendence.cs</DependentUpon>
     </Compile>
+    <Compile Include="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.cs">
+      <DependentUpon>Result.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentResult.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Attendence.resx">
       <DependentUpon>Attendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentResult.resx">
       <DependentUpon>StudentResult.cs</DependentUpon>
