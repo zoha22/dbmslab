@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using DGVPrinterHelper;
 
 
 namespace ProjectB
@@ -87,8 +87,18 @@ namespace ProjectB
 
         private void button1_Click( object sender,  EventArgs e)
         {
-           
-            
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Student Result Report"; //HEADER
+
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+
+            printer.FooterSpacing = 15;
+            printer.PrintDataGridView(dataGridView1);
+
         }
     }
 }

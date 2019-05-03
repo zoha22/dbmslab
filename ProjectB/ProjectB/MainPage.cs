@@ -83,5 +83,12 @@ namespace ProjectB
         {
            
         }
+
+        private void linkLabel8_LinkClicked_2(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Attendence form = new Attendence (); // this will redirect the page to StudentResult 
+            this.Hide();
+            form.Show();
+        }
     }
 }

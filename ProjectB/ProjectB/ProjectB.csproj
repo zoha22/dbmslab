@@ -58,6 +58,7 @@
     <Compile Include="Attendence.Designer.cs">
       <DependentUpon>Attendence.cs</DependentUpon>
     </Compile>
+    <Compile Include="DGVPrinter.cs" />
     <Compile Include="Result.cs">
       <SubType>Form</SubType>
     </Compile>
